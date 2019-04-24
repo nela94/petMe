@@ -1,8 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import { Client } from "@petfinder/petfinder-js";
+
+const initialState = {
+  dogs = []
+  cats = []
+}
 
 const client = new Client({apiKey: "RqPmGmPGHQWIiCVG5gzphrFaw1QomsafGhyq22Q5yOz19zejel", secret: "sShiuXCl1mlIFd4p4Fq5TCwkCzf6ACDDidNipna4"});
 
@@ -20,6 +21,3 @@ client.animal.search()
     .catch(function (error) {
         // Handle the error
     });
-
-
-ReactDOM.render(<App />, document.getElementById('root'));
