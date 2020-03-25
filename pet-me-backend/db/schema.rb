@@ -16,29 +16,26 @@ ActiveRecord::Schema.define(version: 2019_04_24_161803) do
   enable_extension "plpgsql"
 
   create_table "matches", force: :cascade do |t|
-    t.string "name"
-    t.string "gender"
-    t.string "img"
-    t.string "description"
-    t.string "age"
-    t.bigint "user_id_id"
-    t.bigint "pet_id_id"
+    t.bigint "user_id"
+    t.bigint "pet_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["pet_id_id"], name: "index_matches_on_pet_id_id"
-    t.index ["user_id_id"], name: "index_matches_on_user_id_id"
+    t.index ["pet_id"], name: "index_matches_on_pet_id"
+    t.index ["user_id"], name: "index_matches_on_user_id"
   end
 
   create_table "pets", force: :cascade do |t|
     t.string "name"
     t.string "gender"
-    t.string "img"
     t.string "description"
     t.string "age"
-    t.bigint "user_id_id"
+    t.integer "adoption_id"
+    t.string "img_full"
+    t.string "contact"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id_id"], name: "index_pets_on_user_id_id"
+    t.index ["user_id"], name: "index_pets_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|

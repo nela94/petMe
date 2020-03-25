@@ -1,0 +1,55 @@
+
+.box {
+  position: absolute;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 22px 0px 3px 0px;
+   }
+.image {
+  display: inline-block;
+  height: 100%;
+  padding: 0px 31px 0px 0px;
+  border-radius: 20%;
+  height: 280px;
+  width: 352px
+  }
+
+h4 {
+  text-align: center;
+  }
+
+  .img__wrap {
+    text-align: center;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+
+}
+
+.img__description {
+  border-radius: 8px;
+  text-align: center;
+  font-family: 'FranchiseRegular',Arial,sans-serif;
+  color: #ff6775;
+  padding: 2px 0 10px 0;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.6);
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}

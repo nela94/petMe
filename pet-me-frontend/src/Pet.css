@@ -1,0 +1,163 @@
+/* html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* .card {
+  width: 280px;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+.image {
+  max-width: 100%;
+}
+
+.header {
+  padding: 1.25rem;
+}
+
+.subtitle {
+  margin: 0 0 0.25rem;
+  font-size: 0.75rem;
+  color: #666;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.75rem;
+}
+
+.content {
+  padding: 1.25rem;
+  color: #666;
+  line-height: 1.4;
+} */
+
+
+
+
+/* body {
+  background-color: #dddddd;
+} */
+
+h2{
+  font-size: 40px;
+  text-align: center;
+  font-family: -webkit-pictograph;
+  color: pink;
+  font-weight: bold;
+  padding: 4px 6px 4px;
+  background: rgba(255, 255, 255, 1.6);
+  border-radius: 10px
+}
+
+h3{
+  font-size: 20px;
+  text-align: center;
+  font-family: 'FranchiseRegular',Arial,sans-serif;
+  font-weight: bold;
+  color: pink;
+  background: rgba(255, 255, 255, 1.6);
+  border-radius: 10px
+}
+
+h4 {
+  font-size: 40px;
+  text-align: center;
+  font-family: -webkit-pictograph;
+  color: pink;
+  font-weight: bold;
+  padding: 4px 6px 4px;
+  background: rgba(255, 255, 255, 1.6);
+  border-radius: 16px 16px 16px 16px;
+}
+
+h5 {
+  font-size: 40px;
+  text-align: center;
+  font-family: -webkit-pictograph;
+  color: pink;
+  font-weight: bold;
+  padding: 0px 6px 4px;
+}
+
+.width-1000 {
+  width: 1000px;
+  position: relative;
+  left: -140px;
+}
+
+
+.pet-container {
+  width: 500px;
+  margin: auto;
+  width: 60%;
+}
+
+.matched-pets {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1000px;
+}
+
+.matched-pets .card-container-master {
+  width: 30%;
+  margin: auto;
+}
+
+.card {
+  /* border: 0; */
+  border-radius: 8px;
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+  border-style: ridge;
+  /* width: 400px; */
+  /* height: 250px; */
+}
+
+.card-container-master {
+  width: 100%;
+}
+
+.card-img img {
+  border-radius: 8px;
+  padding: 15px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-body {
+  margin-top: -100px;
+  border-radius: 15px;
+  padding-top: 100px;
+  background-color: #ffffff;
+}
+
+.card-img .close {
+  position: absolute;
+  top: 2px;
+  right: 7px;
+  z-index: 100;
+  background-color: #9b8e8e;
+  padding: 21px 16px 30px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: .2;
+  text-align: center;
+  font-size: 66px;
+  line-height: 10px;
+  border-radius: 50%;
+}
+.card-img:hover .close {
+  opacity: 1;
+}

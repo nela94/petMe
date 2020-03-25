@@ -1,0 +1,22 @@
+{
+  "name": "manuela",
+  "version": "\"1.0.0\"",
+  "description": "\"needed package\"",
+  "proxy": "http://localhost:3001",
+  "main": "index.js",
+  "repository": "git@github.com:nela94/pet-me-backend.git",
+  "author": "<github username> <<github email address>>",
+  "license": "MIT"
+}
+
+"scripts": {
+    "build": "cd client && yarn install && yarn build && cd ..",
+    "deploy": "cp -a client/build/. public/",
+    "postinstall": "yarn build && yarn deploy && echo 'Client built!'"
+  },
+
+  "engines": {
+    "yarn": "1.21.1",
+    "npm": "6.11.3",
+    "node": "12.11.1"
+  },

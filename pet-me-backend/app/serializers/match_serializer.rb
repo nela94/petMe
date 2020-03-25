@@ -1,3 +1,5 @@
 class MatchSerializer < ActiveModel::Serializer
-  attributes :id, :name, :gender, :img, :description, :age, :user_id, :pet_id
+  attributes :id, :user_id, :pet_id
+  belongs_to :user
+  belongs_to :pet
 end

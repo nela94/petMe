@@ -1,33 +1,362 @@
-.App {
+
+@font-face {
+    font-family: 'Raleway', sans-serif;
+}
+/* CSS reset */
+body,div,dl,dt,dd,ul,ol,li,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+	margin:0;
+	padding:0;
+}
+html,body {
+	margin:0;
+	padding:0;
+	height: 100%;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img {
+	border:0;
+}
+address,caption,cite,code,dfn,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+
+
+abbr,acronym { border:0;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+/* General Demo Style */
+
+ol,ul {
+	list-style:none;
+}
+body{
+	font-family: Cambria, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+	background: #fff repeat top left;
+	font-weight: 400;
+	font-size: 15px;
+	color: #1d3c41;
+	overflow-y: scroll;
+}
+a{
+	color: #333;
+	text-decoration: none;
+}
+.container{
+	width: 50%;
+	height: 100%;
+	position: relative;
+	text-align: center;
+
+}
+.clr{
+	clear: both;
+}
+.container > header{
+	padding: 20px 30px 10px 30px;
+	position: relative;
+	display: block;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    text-align: center;
+}
+.container > header h1{
+  font-size: 60px;
+  color: pink;
+  padding: 8px 0 0px 51px;
+  font-family: 'FranchiseRegular',Arial,sans-serif;
+  font-weight: bold;
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.container > header h1 span{
+	color: #7cbcd6;
+	text-shadow: 0px 1px 1px rgba(255,255,255,0.8);
+}
+.container > header h2{
+	font-size: 16px;
+	font-style: italic;
+	color: pink;
+	text-shadow: 0px 1px 1px rgba(255,255,255,0.8);
+}
+/* Header Style */
+.codrops-top{
+	line-height: 24px;
+	font-size: 11px;
+	background: rgba(255, 255, 255, 0.4);
+	text-transform: uppercase;
+	z-index: 9999;
+	position: relative;
+	box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
+}
+.codrops-top a{
+	padding: 0px 10px;
+	letter-spacing: 1px;
+	color: #333;
+	text-shadow: 0px 1px 1px #fff;
+	display: block;
+	float: left;
+}
+.codrops-top a:hover{
+	background: #fff;
+}
+.codrops-top span.right{
+	float: right;
+}
+.codrops-top span.right a{
+	float: left;
+	display: block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.codrops-demos{
+	text-align:center;
+	display: block;
+	padding: 14px;
+}
+.codrops-demos span{
+	display: inline-block;
+	padding-right: 15px;
+	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+}
+.codrops-demos a,
+.codrops-demos a.current-demo,
+.codrops-demos a.current-demo:hover{
+    display: inline-block;
+	font-style: italic;
+	font-size: 12px;
+	padding: 3px 5px;
+	margin: 0px 3px;
+	font-weight: 800;
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.05) inset;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+	background: rgba(104,171,194,0.5);
+}
+.codrops-demos a:hover{
+	background: #4fa2c4;
+}
+.codrops-demos a.current-demo,
+.codrops-demos a.current-demo:hover{
+	color: rgba(104,171,194,1);
+	background: rgba(255,255,255,0.9);
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
 }
 
-.App-link {
-  color: #61dafb;
+/* remove codrops styles and reset the whole thing */
+body{background:url(https://i1.wp.com/fbresearch.org/wp-content/uploads/2017/09/cat-and-bulldog.jpg?w=1080&ssl=1);
+background-attachment:fixed;
+background-size:cover;
+}
+#container_demo{
+	 text-align: left;
+	 margin: 0;
+	 padding: 0;
+	 margin: 0 auto;
+   padding-left: 30px;
+	 font-family: 'Raleway', sans-serif;
+}
+/** The wrapper that will contain our two forms **/
+#wrapper{
+	min-height: 560px;
+}
+/**** Styling the form elements **/
+
+/**** general text styling ****/
+#wrapper a{
+	color: rgb(95, 155, 198);
+	text-decoration: underline;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#wrapper h1{
+	font-size: 48px;
+	color: rgb(115, 115, 115, 21);
+	padding: 2px 0 10px 0;
+	font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 30px;
+}
+/** For the moment only webkit supports the background-clip:text; */
+#wrapper h1{
+  background: -webkit-repeating-linear-gradient(-45deg,
+	rgb(18, 83, 93) ,
+	rgb(18, 83, 93) 20px,
+	rgb(64, 111, 118) 20px,
+	rgb(64, 111, 118) 40px,
+	rgb(18, 83, 93) 40px);
+	-webkit-background-clip: text;
+}
+
+#wrapper p{
+	margin-bottom:15px;
+}
+#wrapper p:first-child{
+	margin: 0px;
+}
+
+/**** advanced input styling ****/
+/* placeholder */
+::-webkit-input-placeholder  {
+	color: rgb(190, 188, 188);
+	font-style: italic;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder{
+	color: rgb(190, 188, 188);
+	font-style: italic;
+}
+input {
+  outline: none;
+}
+
+/* all the input except submit and checkbox */
+#wrapper input:not([type="checkbox"]){
+	width: 92%;
+	margin-top: 4px;
+	padding: 10px 5px 10px 32px;
+	border: 1px solid rgb(178, 178, 178);
+	-webkit-appearance: textfield;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
+	-webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+	   -moz-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+	        box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+	-webkit-transition: all 0.2s linear;
+	   -moz-transition: all 0.2s linear;
+	     -o-transition: all 0.2s linear;
+	        transition: all 0.2s linear;
+}
+
+/** the magic icon trick ! **/
+
+/*styling both submit buttons */
+#wrapper p.button input{
+	width: 30%;
+	cursor: pointer;
+	background: pink;
+	padding: 8px 5px;
+	font-family: 'BebasNeueRegular','Arial Narrow',Arial,sans-serif;
+	color: #fff;
+	font-size: 24px;
+	border: 1px solid rgb(28, 108, 122);
+	margin-bottom: 10px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
+	-webkit-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
+	        0px 0px 0px 3px rgb(254, 254, 254),
+	        0px 5px 3px 3px rgb(210, 210, 210);
+	   -moz-box-shadow:0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
+	        0px 0px 0px 3px rgb(254, 254, 254),
+	        0px 5px 3px 3px rgb(210, 210, 210);
+	        box-shadow:0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
+	        0px 0px 0px 3px rgb(254, 254, 254),
+	        0px 5px 3px 3px rgb(210, 210, 210);
+	-webkit-transition: all 0.2s linear;
+	   -moz-transition: all 0.2s linear;
+	     -o-transition: all 0.2s linear;
+	        transition: all 0.2s linear;
+}
+#wrapper p.button input:hover{
+	background: rgb(115, 115, 115, 21);
+}
+#wrapper p.button input:active,
+#wrapper p.button input:focus{
+	background: rgb(40, 137, 154);
+	position: relative;
+	top: 1px;
+	border: 1px solid rgb(12, 76, 87);
+	-webkit-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+	   -moz-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+	        box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+}
+p.login.button{
+	text-align: right;
+	margin: 5px 0;
+},
+p.signin.button{
+	text-align: right;
+	margin: 5px 0;
+}
+
+strong {
+  padding: 0px 10px 0px 0px
+}
+
+/* styling the checkbox "keep me logged in"*/
+
+/*styling the links to change from one form to another */
+
+  p.change_link{
+	/* position: absolute; */
+	color: rgb(127, 124, 124);
+	left: 0px;
+	height: 20px;
+	width: 430px;
+	padding: 22px 44px 43px 22px;
+	font-size: 16px	;
+	text-align: right;
+  left: 111px;
+	border-top: 1px solid rgb(219, 229, 232);
+	-webkit-border-radius: 0 0  5px 5px;
+	   -moz-border-radius: 0 0  5px 5px;
+	        border-radius: 0 0  5px 5px;
+	background: rgb(255, 255, 255, 0.6);
+}
+
+/** Styling both forms **/
+
+#login{
+  position: absolute;
+	width: 69%;
+  left: 11%;
+	padding: 22px 6% 21px 6%;
+	margin:0  44px;
+	background: rgb(247, 247, 247);
+	border: 1px solid rgba(147, 184, 189,0.8);
+	-webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	   -moz-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	        box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	-webkit-box-shadow: 5px;
+	-moz-border-radius: 5px;
+		 border-radius: 5px;
+}
+#signup{
+  position: absolute;
+  left: 8%;
+  width: 76%;
+  padding: 22px 6% 21px 6%;
+  margin:0  44px;
+  background: rgb(247, 247, 247);
+  border: 1px solid rgba(147, 184, 189,0.8);
+  -webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+     -moz-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+          box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+  -webkit-box-shadow: 5px;
+  -moz-border-radius: 5px;
+     border-radius: 5px;
+
+}
+
+.modal{
+height: 317px;
+width: 313px;
+position: fixed;
+left: 39%;
+z-index: 200;
+display: none;
+justify-content: center;
+align-items: center;
 }
