@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
+  adapter: postgresql
   database: pet-me-backend_production
   username: pet-me-backend
   password: <%= ENV['PET-ME-BACKEND_DATABASE_PASSWORD'] %>

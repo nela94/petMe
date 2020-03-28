@@ -6,7 +6,8 @@ const removeMatch = (match) => ({type: 'DELETE_MATCH', payload: match})
 export const newUser = (userInfo) => {
   console.log("hshshs")
   return (dispatch) => {
-    fetch("http://localhost:3000/api/v1/users", {
+    // removed hardcoded path
+    fetch("/api/v1/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -27,7 +28,7 @@ const showModal = () => {
 
 export const gettingUser = (userInfo) => {
   return (dispatch) => {
-    fetch("http://localhost:3000/api/v1/login", {
+    fetch("/api/v1/login", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -47,7 +48,7 @@ export const gettingUser = (userInfo) => {
 export const getCurrentUser = () => (dispatch) => {
     let token = localStorage.token;
     token
-      && fetch("http://localhost:3000/api/v1/current_user", {
+      && fetch("/api/v1/current_user", {
           method: "GET",
           headers: {
             "content-type": "application/json",
@@ -64,7 +65,7 @@ export const getCurrentUser = () => (dispatch) => {
   export const creatingMatches = (user, pet) => {
     console.log("pet created",pet)
     return (dispatch) => {
-      fetch("http://localhost:3000/matches", {
+      fetch("/matches", {
         method: "POST",
         headers: {
           "content-type": "application/json",
@@ -92,7 +93,7 @@ export const getCurrentUser = () => (dispatch) => {
 
 export const deletingAMatch = (match) => {
   return (dispatch) => {
-    fetch(`http://localhost:3000/matches/${match.id}`, {
+    fetch(`/matches/${match.id}`, {
       method:'DELETE',
     })
     .then(dispatch(removeMatch(match)))
@@ -101,7 +102,7 @@ export const deletingAMatch = (match) => {
 
 export const addingUserIDtoPet = (pet, user) => {
   return (dispatch) => {
-    fetch(`http://localhost:3000/pets/${pet.id}`, {
+    fetch(`/pets/${pet.id}`, {
       method: "PATCH",
       headers: {
         "content-type": "application/json",
@@ -119,7 +120,7 @@ export const addingUserIDtoPet = (pet, user) => {
 
 export const gettingAdoptedPet = (id) => {
   return (dispatch) => {
-    fetch(`http://localhost:3000/pets/${id}`)
+    fetch(`/pets/${id}`)
     .then(resp => resp.json())
     .then(data => {dispatch(chosenPet(data))
     })
