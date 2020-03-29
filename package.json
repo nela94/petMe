@@ -7,7 +7,7 @@
   "repository": "git@github.com:nela94/PetMe.git",
   "author": "<github username> <<github email address>>",
   "license": "MIT"
-},
+}
 
 "scripts": {
     "build": "cd client && yarn install && yarn build && cd ..",
