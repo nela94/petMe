@@ -6,16 +6,15 @@
   "main": "index.js",
   "repository": "git@github.com:nela94/PetMe.git",
   "author": "<github username> <<github email address>>",
-  "license": "MIT"
-}
-
-"scripts": {
+  "license": "MIT",
+  "scripts": {
     "build": "cd client && yarn install && yarn build && cd ..",
     "deploy": "cp -a client/build/. public/",
-    "postinstall": "yarn build && yarn deploy && echo 'Client built!"
+    "postinstall": "yarn build && yarn deploy && echo 'Client built!''"
   },
   "engines": {
     "yarn": "1.15.2",
     "npm": "6.9.0",
     "node": "11.8.0"
   }
+}
