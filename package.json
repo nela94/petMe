@@ -1,16 +1,48 @@
 {
-  "name": "manuela",
-  "version": "1.0.0",
+  "name": "Pet-me",
+  "version": "0.1.0",
+  "private": true,
   "description": "needed package",
   "proxy": "http://localhost:3001",
   "main": "index.js",
   "repository": "git@github.com:nela94/PetMe.git",
   "author": "<github username> <<github email address>>",
   "license": "MIT",
+  "dependencies": {
+    "@petfinder/petfinder-js": "^1.0.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.0.2",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "3.0.0",
+    "react-swipe-card": "^0.1.4",
+    "react-swipeable-cards": "^1.0.6",
+    "react-swipy": "0.0.6",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0"
+  },
   "scripts": {
     "build": "cd client && yarn install && yarn build && cd ..",
     "deploy": "cp -a client/build/. public/",
     "postinstall": "yarn build && yarn deploy && echo 'Client built!''"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "redux-devtools": "^3.5.0"
   },
   "engines": {
     "yarn": "1.15.2",
