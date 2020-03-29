@@ -13,7 +13,7 @@
     "build": "cd client && yarn install && yarn build && cd ..",
     "deploy": "cp -a client/build/. public/",
     "postinstall": "yarn build && yarn deploy && echo 'Client built!'"
-  },
+  }
   "engines": {
     "yarn": "1.15.2",
     "npm": "6.9.0",
