@@ -10,7 +10,7 @@
   "scripts": {
     "build": "cd pet-me-frontend && npm install && npm build && cd ..",
     "deploy": "cp -a pet-me-frontend/build/. public/",
-    "postinstall": "npm build && npm deploy && echo 'Client built!''"
+    "postinstall": "npm build && npm deploy && echo 'Client built!'"
   },
   "engines": {
     "yarn": "1.15.2",
