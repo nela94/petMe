@@ -1,5 +1,5 @@
 {
-  "name": "Pet-me",
+  "name": "pet-me-frontend",
   "version": "0.1.0",
   "private": true,
   "description": "needed package",
@@ -22,8 +22,8 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
-    "build": "cd client && yarn install && yarn build && cd ..",
-    "deploy": "cp -a client/build/. public/",
+    "build": "cd pet-me-frontend && yarn install && yarn build && cd ..",
+    "deploy": "cp -a pet-me-frontend/build/. public/",
     "postinstall": "yarn build && yarn deploy && echo 'Client built!'"
   },
   "eslintConfig": {
