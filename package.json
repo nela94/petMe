@@ -10,7 +10,8 @@
   "scripts": {
     "build": "cd pet-me-frontend && npm run-script build && npm build && cd ..",
     "deploy": "cp -a pet-me-frontend/build/. public/",
-    "postinstall": "npm run-script build && npm deploy && echo 'Client built!'"
+    "postinstall": "npm run-script build
+    && npm deploy && echo 'Client built!'"
   },
   "engines": {
     "npm": "6.9.0",
