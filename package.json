@@ -14,7 +14,7 @@
     "postinstall": "npm run-script build && npm deploy && echo 'Client built!'"
   },
   "engines": {
-    "npm": "6.4.1",
-    "node": "11.0.0"
+    "npm": "6.9.0",
+    "node": "11.8.0"
   }
 }
