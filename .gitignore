@@ -48,3 +48,5 @@ yarn-error.log*
 /config/master.key
 >>>>>>> pet-me-backend/master
 node_modules
+node_modules
+node_modules
