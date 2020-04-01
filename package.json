@@ -1,21 +1,31 @@
 {
-  "name": "pet-me",
-  "version": "0.1.0",
-  "description": "needed package",
-  "proxy": "http://localhost:3001",
+  "name": "petme",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
   "main": "index.js",
-  "repository": "git@github.com:nela94/PetMe.git",
-  "homepage": ".",
-  "author": "<github username> <<github email address>>",
-  "license": "MIT",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {},
+  "devDependencies": {},
   "scripts": {
-    "build": "cd pet-me-frontend && npm install && npm run-script build && cd ..",
+    "build": "cd pet-me-frontend && npm install && npm build && cd ..",
     "deploy": "cp -a pet-me-frontend/build/. public/",
-    "postinstall": "npm run-script build && npm deploy && echo 'Client built!'"
+    "postinstall": "npm build && npm deploy && echo 'Client built!'"
   },
   "engines": {
-    "npm": "6.9.0",
-    "node": "11.8.0",
-    "yarn": "1.15.2"
-  }
+   "yarn": "1.15.2",
+   "npm": "6.9.0",
+   "node": "11.8.0"
+ },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nela94/PetMe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nela94/PetMe/issues"
+  },
+  "homepage": "https://github.com/nela94/PetMe#readme"
 }
