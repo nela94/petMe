@@ -9,9 +9,9 @@
   "dependencies": {},
   "devDependencies": {},
   "scripts": {
-    "build": "cd pet-me-frontend && npm-install && npm run build && cd ..",
+    "build": "cd pet-me-frontend && yarn install && yarn build && cd ..",
     "deploy": "cp -a pet-me-frontend/build/. public/",
-    "postinstall": "npm run build && npm deploy && echo 'Client built!'"
+    "postinstall": "yarn build && yarn deploy && echo 'Client built!'"
   },
   "engines": {
    "yarn": "1.15.2",
